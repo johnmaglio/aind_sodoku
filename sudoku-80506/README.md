@@ -3,6 +3,7 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
+A: In the case of naked twins, we know that there are two possible values in exactly two squares of a given unit. Therefore, we know that one of the values must go in one of the squares and the other value will go in the other square. Furthermore, we can remove these two values from the list of possible values of the other squares in the unit. 
 
 In our program, the naked_twins() function first finds all possible naked twin squares (all boxes that have two possible values). Then, we confirm that the possible twin is in fact a twin, by checking the values of the other squares in the unit. At that point, we eliminate these two values from the non-twin squares of the unit. 
 
